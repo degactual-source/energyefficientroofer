@@ -1,12 +1,43 @@
-# robots.txt for energyefficientroofer.com
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
-Disallow: /tmp/
 
-# Sitemap
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bard
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
 Sitemap: https://energyefficientroofer.com/sitemap.xml
-
-# Crawl-delay (optional, respected by some bots)
-Crawl-delay: 1

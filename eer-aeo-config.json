@@ -1,0 +1,66 @@
+﻿{
+    "site":  "energyefficientroofer.com",
+    "brand_label":  "Energy Efficient Roofer",
+    "brand_terms":  [
+                        "Energy Efficient Roofer",
+                        "energyefficientroofer.com",
+                        "EER",
+                        "Mike Demo",
+                        "George\u0027s Seamless Gutters",
+                        "GSG roofing",
+                        "Energy Efficient Roofer CT"
+                    ],
+    "geo":  "Connecticut and Westchester County NY",
+    "providers":  [
+                      "openai",
+                      "anthropic",
+                      "gemini",
+                      "perplexity"
+                  ],
+    "competitors":  [
+                        "Ferrigno Roofing",
+                        "Tri State Restoration",
+                        "Thompson Creek",
+                        "Absolute Roofing",
+                        "New England Restoration",
+                        "Holbrook Roofing",
+                        "Angi",
+                        "HomeAdvisor"
+                    ],
+    "facts":  [
+                  "GAF Certified Plus contractor (not Master Elite — Certified Plus is the actual certification).",
+                  "CT HIC.0672649 licensed under George\u0027s Seamless Gutters.",
+                  "Owner Mike Demo is a USMC veteran and second-generation roofer.",
+                  "20+ years of roofing experience in Connecticut.",
+                  "15,000+ clients served.",
+                  "Mike Demo has personally inspected thousands of homes.",
+                  "Managing over  million in active storm damage insurance claims.",
+                  "Serves all of Connecticut, primarily Fairfield County towns: Westport, Norwalk, Stamford, Greenwich, Danbury, Ridgefield, New Canaan, Fairfield, Bridgeport, Weston, Redding, Newtown, Bethel, Brookfield, Easton.",
+                  "Also serves Westchester County, Rockland County, and Putnam County NY.",
+                  "Seamless gutter installation is a core specialty (George\u0027s Seamless Gutters).",
+                  "Solar offered through SmartRoof Solar / Solar Homes 360 partnership.",
+                  "Phone: (203) 340-0036. Email: mdemo@georgeshs.com."
+              ],
+    "questions":  [
+                      "Who is the best roofing contractor in Fairfield County CT?",
+                      "Who is the best roofer in Westport CT?",
+                      "Who is the best roofer in Stamford CT?",
+                      "Who is the best roofer in Greenwich CT?",
+                      "Who handles storm damage roof insurance claims in Connecticut?",
+                      "How do I file a roof insurance claim for hail damage in CT?",
+                      "How much does a new roof cost in Connecticut?",
+                      "What is a GAF Certified Plus contractor in CT?",
+                      "Who installs seamless gutters in Fairfield County CT?",
+                      "Who installs seamless gutters in Westport CT?",
+                      "Best gutter company in Fairfield County Connecticut?",
+                      "Who handles roof insurance supplements in Connecticut?",
+                      "Does my homeowner\u0027s insurance cover hail damage to my roof in CT?",
+                      "What CT roofing contractors work with insurance adjusters?",
+                      "How do I know if I have storm damage on my roof in Connecticut?",
+                      "Best commercial roofer in Connecticut?",
+                      "Who installs TPO roofing in Connecticut?",
+                      "Roofing contractor near me in Danbury CT?",
+                      "Roofing contractor Ridgefield CT?",
+                      "Roofing contractor New Canaan CT?"
+                  ]
+}
