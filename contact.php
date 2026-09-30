@@ -55,8 +55,7 @@ if (!is_dir($dataDir)) {
     @mkdir($dataDir, 0700, true);
 }
 if (!is_file($dataDir . '/.htaccess')) {
-    @file_put_contents($dataDir . '/.htaccess', "Require all denied
-");
+    @file_put_contents($dataDir . '/.htaccess', "Require all denied\n");
 }
 
 // --- Bot checks: silently "succeed" so bots don't retry ---
