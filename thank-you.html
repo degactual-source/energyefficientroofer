@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Energy Efficient Roofer</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Schedule a free roof inspection with Energy Efficient Roofer. Call (203) 340-0036 or email contact@energyefficientroofer.com. Serving all of Connecticut and Westchester, Rockland, Putnam County NY.">
+  <link rel="canonical" href="https://energyefficientroofer.com/contact.html">
+  <meta property="og:title" content="Contact Energy Efficient Roofer — Free Roof Inspection CT &amp; NY">
+  <meta property="og:description" content="Call (203) 340-0036 or email contact@energyefficientroofer.com. Free roof inspections throughout Connecticut and the New York tri-county area. CT HIC.0645935.">
+  <meta property="og:url" content="https://energyefficientroofer.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Energy Efficient Roofer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Energy Efficient Roofer — Free Roof Inspection">
+  <meta name="twitter:description" content="(203) 340-0036 | contact@energyefficientroofer.com | Free inspections in CT and NY.">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD: LocalBusiness with ContactPage signals -->
+  <!-- JSON-LD: ContactPage -->
+  <!-- JSON-LD: BreadcrumbList -->
+  <!-- JSON-LD: FAQPage -->
+  <style>
+    /* =============================================
+       DESIGN TOKENS
+       ============================================= */
+    :root {
+      --navy:      #1B2A4A;
+      --gold:      #C5A258;
+      --white:     #FFFFFF;
+      --light-gray:#F5F6FA;
+      --text-dark: #1A1A1A;
+      --text-mid:  #4A4A4A;
+      --border:    #DDE0E8;
+      --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+
+    /* =============================================
+       BASE
+       ============================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-sans);
+      color: var(--text-dark);
+      background: var(--white);
+      line-height: 1.65;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* =============================================
+       HEADER / NAV
+       ============================================= */
+    header {
+      background: var(--navy);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,.25);
+    }
+    nav.main-nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -.3px;
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,.85);
+      font-size: .95rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links a:hover,
+    .nav-links a[aria-current="page"] { color: var(--gold); }
+    .nav-cta {
+      background: var(--gold);
+      color: var(--navy) !important;
+      padding: 8px 20px;
+      border-radius: 4px;
+      font-weight: 700 !important;
+    }
+    .nav-cta:hover { background: #b8922a; text-decoration: none; }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+    }
+
+    /* =============================================
+       BREADCRUMB
+       ============================================= */
+    .breadcrumb {
+      background: var(--light-gray);
+      border-bottom: 1px solid var(--border);
+    }
+    .breadcrumb ol {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px 24px;
+      list-style: none;
+      display: flex;
+      gap: 6px;
+      font-size: .85rem;
+      color: var(--text-mid);
+    }
+    .breadcrumb li + li::before { content: "/"; margin-right: 6px; color: var(--text-mid); }
+    .breadcrumb a { color: var(--navy); }
+    .breadcrumb [aria-current="page"] { color: var(--text-mid); font-weight: 500; }
+
+    /* =============================================
+       PAGE HERO
+       ============================================= */
+    .page-hero {
+      background: var(--navy);
+      color: var(--white);
+      padding: 64px 24px 56px;
+      text-align: center;
+    }
+    .page-hero h1 {
+      font-size: clamp(1.65rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      line-height: 1.2;
+      max-width: 800px;
+      margin: 0 auto 18px;
+    }
+    .page-hero h1 span { color: var(--gold); }
+    .page-hero .hero-sub {
+      font-size: 1.08rem;
+      color: rgba(255,255,255,.8);
+      max-width: 580px;
+      margin: 0 auto 32px;
+    }
+
+    /* =============================================
+       CONTACT LAYOUT
+       ============================================= */
+    .contact-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 64px 24px;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    /* CONTACT CARD */
+    .contact-card {
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 8px;
+      padding: 36px 32px;
+      position: sticky;
+      top: 88px;
+    }
+    .contact-card h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 28px;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .contact-method {
+      margin-bottom: 28px;
+    }
+    .contact-method .label {
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: rgba(255,255,255,.5);
+      margin-bottom: 6px;
+    }
+    .contact-method .value {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.2;
+    }
+    .contact-method .value a {
+      color: var(--white);
+      text-decoration: none;
+    }
+    .contact-method .value a:hover {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .contact-method .value-email {
+      font-size: 1.1rem;
+    }
+    .contact-method .note {
+      font-size: .85rem;
+      color: rgba(255,255,255,.55);
+      margin-top: 4px;
+    }
+    .contact-card-license {
+      border-top: 1px solid rgba(255,255,255,.12);
+      padding-top: 20px;
+      font-size: .83rem;
+      color: rgba(255,255,255,.45);
+    }
+    .contact-card-license strong { color: rgba(255,255,255,.7); }
+    .emergency-note {
+      background: rgba(197,162,88,.15);
+      border: 1px solid rgba(197,162,88,.4);
+      border-radius: 5px;
+      padding: 12px 14px;
+      font-size: .88rem;
+      color: rgba(255,255,255,.8);
+      margin-top: 20px;
+    }
+    .emergency-note strong { color: var(--gold); }
+
+    /* FORM SIDE */
+    .form-side h2 {
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .form-side .form-intro {
+      font-size: 1rem;
+      color: var(--text-mid);
+      margin-bottom: 28px;
+    }
+
+    /* FORM */
+    .contact-form {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 32px 28px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 5px;
+      font-size: .98rem;
+      font-family: var(--font-sans);
+      color: var(--text-dark);
+      background: var(--white);
+      transition: border-color .2s;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--navy);
+    }
+    .form-group textarea { min-height: 120px; resize: vertical; }
+    .form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%231B2A4A' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 36px;
+    }
+    .form-submit-row {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .btn-submit {
+      background: var(--navy);
+      color: var(--white);
+      border: none;
+      border-radius: 5px;
+      padding: 14px 32px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .btn-submit:hover { background: #253a6a; }
+    .form-note {
+      font-size: .82rem;
+      color: var(--text-mid);
+      text-align: center;
+    }
+
+    /* =============================================
+       CONTENT SECTIONS
+       ============================================= */
+    .content-wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px 64px;
+    }
+    .content-section {
+      margin-bottom: 56px;
+    }
+    .content-section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--gold);
+      display: inline-block;
+    }
+    .content-section p {
+      margin-bottom: 16px;
+      font-size: 1.02rem;
+      color: var(--text-dark);
+    }
+    .content-section p:last-child { margin-bottom: 0; }
+
+    /* SERVICE AREA LAYOUT */
+    .sa-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 24px;
+    }
+    .sa-block {
+      background: var(--light-gray);
+      border-radius: 6px;
+      padding: 22px 24px;
+    }
+    .sa-block h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    .sa-block ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sa-block ul li {
+      font-size: .92rem;
+      color: var(--text-mid);
+      padding: 3px 0;
+    }
+    .sa-block ul li::before { content: "— "; color: var(--gold); font-weight: 700; }
+
+    /* RESPONSE INFO */
+    .response-info {
+      background: var(--light-gray);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 6px 6px 0;
+      padding: 20px 24px;
+      margin-top: 24px;
+    }
+    .response-info p {
+      margin: 0;
+      font-size: .98rem;
+    }
+
+    /* FAQ */
+    .faq-list { margin-top: 24px; }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .faq-item p {
+      font-size: .98rem;
+      color: var(--text-dark);
+      margin: 0;
+    }
+
+    /* =============================================
+       FOOTER
+       ============================================= */
+    footer {
+      background: #111c30;
+      color: rgba(255,255,255,.65);
+      padding: 40px 24px 28px;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: space-between;
+      margin-bottom: 28px;
+    }
+    .footer-col h4 {
+      color: var(--white);
+      font-size: .95rem;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .footer-col p, .footer-col a {
+      font-size: .88rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,.6);
+      text-decoration: none;
+      display: block;
+    }
+    .footer-col a:hover { color: var(--gold); }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 20px;
+      font-size: .82rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+    }
+
+    /* =============================================
+       RESPONSIVE
+       ============================================= */
+    @media (max-width: 900px) {
+      .contact-wrap { grid-template-columns: 1fr; }
+      .contact-card { position: static; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--navy);
+        padding: 20px 24px 28px;
+        gap: 16px;
+        box-shadow: 0 4px 12px rgba(0,0,0,.3);
+      }
+      .form-row { grid-template-columns: 1fr; }
+      .sa-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="/" class="nav-logo">Energy Efficient <span>Roofer</span></a>
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true'); document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" role="list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/insurance.html">Insurance Claims</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html" aria-current="page" class="nav-cta">Free Inspection</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main style="max-width:720px;margin:0 auto;padding:5rem 1.5rem;text-align:center;">
+  <h1>Thanks. Your request is in.</h1>
+  <p style="font-size:1.15rem;margin-top:1rem;">Mike will follow up within 24 hours on business days.</p>
+  <p style="margin-top:1rem;">Active leak or storm damage? Call or text <a href="tel:+12033400036"><strong>(203) 340-0036</strong></a> now.</p>
+  <p style="margin-top:2rem;"><a href="/">Back to the homepage</a> &middot; <a href="/insurance-claims.html">How we handle insurance claims</a></p>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Energy Efficient Roofer</h4>
+      <p>Operating as George's Seamless Gutters</p>
+      <p>CT HIC.0645935</p>
+      <p>GAF Certified Plus</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+12033400036">(203) 340-0036</a>
+      <a href="mailto:contact@energyefficientroofer.com">contact@energyefficientroofer.com</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="/services.html">Residential Roofing</a>
+      <a href="/insurance.html">Insurance Claims</a>
+      <a href="/services.html#gutters">Gutters</a>
+      <a href="/services.html#solar">Solar</a>
+    </div>
+    <div class="footer-col">
+      <h4>Service Area</h4>
+      <p>All of Connecticut</p>
+      <p>Westchester County, NY</p>
+      <p>Rockland County, NY</p>
+      <p>Putnam County, NY</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2024 Energy Efficient Roofer &mdash; partnered with George's Seamless Gutters. CT HIC.0645935.</span>
+    <span><a href="/privacy.html" style="color:rgba(255,255,255,.5)">Privacy Policy</a></span>
+  </div>
+</footer>
+</body>
+</html>
