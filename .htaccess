@@ -1,23 +1,18 @@
-# EER static site (Bluehost addon-domain docroot: ~/public_html/energyefficientroofer)
-# Own rewrite context so the parent WordPress rules in ~/public_html/.htaccess don't apply here.
+# EER static site. Lives in ~/public_html/energyefficientroofer.
+# energyefficientroofer.com is a parked alias of ~/public_html, so ~/public_html/.htaccess
+# has a host rule (marked "BEGIN EER static site") that rewrites that host into this folder.
+# RewriteEngine On here gives this folder its own rewrite context, so the parent
+# WordPress rules never run for EER requests.
 DirectoryIndex index.html
 Options -Indexes
 
 RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
-
-ErrorDocument 404 /index.html
-
-<FilesMatch "^(README\.md|eer-aeo-config\.json)$">
-  Require all denied
-</FilesMatch>
+# Only serve this folder under the EER domain (blocks growwithdelta.com/energyefficientroofer/ etc.)
+RewriteCond %{HTTP_HOST} !^(www\.)?energyefficientroofer\.com$ [NC]
+RewriteRule ^(.*)$ https://energyefficientroofer.com/$1 [R=301,L]
 
 # Deployed via cPanel Git Version Control: never serve repo internals
 RedirectMatch 404 /\.git
-<FilesMatch "^(AGENTS\.md|\.gitignore)$">
+<FilesMatch "^(README\.md|AGENTS\.md|eer-aeo-config\.json|\.gitignore)$">
   Require all denied
 </FilesMatch>
