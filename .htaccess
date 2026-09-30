@@ -15,3 +15,9 @@ ErrorDocument 404 /index.html
 <FilesMatch "^(README\.md|eer-aeo-config\.json)$">
   Require all denied
 </FilesMatch>
+
+# Deployed via cPanel Git Version Control: never serve repo internals
+RedirectMatch 404 /\.git
+<FilesMatch "^(AGENTS\.md|\.gitignore)$">
+  Require all denied
+</FilesMatch>
