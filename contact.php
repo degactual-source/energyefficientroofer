@@ -10,7 +10,7 @@
  * Returns JSON when called with Accept: application/json, otherwise redirects to /thank-you.html.
  */
 
-const LEAD_TO     = 'contact@energyefficientroofer.com';
+const LEAD_TO     = 'mike@energyefficientroofer.com';
 const MAIL_FROM   = 'website@energyefficientroofer.com';
 const MIN_SECONDS = 3;      // faster than this = bot
 const RATE_LIMIT  = 5;      // max submits per IP per hour
