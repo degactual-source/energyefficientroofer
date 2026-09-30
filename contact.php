@@ -3,7 +3,7 @@
  * EER contact form handler (Bluehost / PHP).
  *
  * 1. Rejects bots (honeypot, too-fast submit, per-IP rate limit).
- * 2. Appends every real lead to a JSONL log OUTSIDE public_html (../eer-leads/leads.jsonl)
+ * 2. Appends every real lead to a JSONL log outside all web roots (~/eer-leads/leads.jsonl)
  *    so no lead is lost even if mail delivery fails.
  * 3. Emails the lead to LEAD_TO with a fixed, machine-readable body for AI inbox agents.
  *
@@ -48,14 +48,15 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-// Storage outside the web root; fall back to a locked folder inside it.
-$dataDir = dirname(__DIR__) . '/eer-leads';
-if (!is_dir($dataDir) && !@mkdir($dataDir, 0700, true)) {
-    $dataDir = __DIR__ . '/_eer-leads';
-    if (!is_dir($dataDir)) {
-        @mkdir($dataDir, 0700, true);
-        @file_put_contents($dataDir . '/.htaccess', "Require all denied\nDeny from all\n");
-    }
+// Storage outside every web root. The site lives in ~/public_html/energyefficientroofer and
+// ~/public_html is itself a web root for other domains, so go two levels up to the home dir.
+$dataDir = dirname(__DIR__, 2) . '/eer-leads';
+if (!is_dir($dataDir)) {
+    @mkdir($dataDir, 0700, true);
+}
+if (!is_file($dataDir . '/.htaccess')) {
+    @file_put_contents($dataDir . '/.htaccess', "Require all denied
+");
 }
 
 // --- Bot checks: silently "succeed" so bots don't retry ---
